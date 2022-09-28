@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.toolbar{
+    display: flex;
+    gap: 10px;
+    padding: 20px 6% 17px;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    border-bottom: 0.5px #ccc solid;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+.toolbar p{
+    margin: 0;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+
+.tabs{
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    border-top: solid 1px #ddd;
+    width: 100%;
+    display: flex;
+    padding: 18px 0 25px;
+    justify-content: space-evenly;
+}
+
+.tabs a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.tabs i{
+    color: #888;
+    font-size: 22px;
+}
+
+.tabs p{
+    color: #bbb;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.tabs .active{
+    color: #4387ed;
+}
+
+.tabs .active i{
+    color: #4387ed;
+}
+
+.tabs .active p{
+    color: #86aeea;
+}
