@@ -69,3 +69,7 @@ img.emoji {
 .tabs .active p{
     color: #86aeea;
 }
+
+#canvas{
+    width: 100%;
+}
