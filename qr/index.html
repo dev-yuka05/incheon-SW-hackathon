@@ -84,7 +84,12 @@
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
           console.log(code.data)
-          window.location.href = code.data;
+          if(code.data.match(/http.*/g)){
+            code.data = code.data.replace('http', 'https');
+            window.location.href = code.data;
+          }else{
+            window.location.href = code.data;
+          }
         } else {
           outputMessage.hidden = false;
           outputData.parentElement.hidden = true;
