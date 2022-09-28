@@ -11,25 +11,29 @@
 </head>
 <body>
     <div class="toolbar">
-        <div></div>
+        <div><i class="fa-solid fa-arrow-left"></i></div>
         <p>메뉴 선택</p>
         <div></div>
     </div>
 
-    <div class="tabs">
-        <a href="./index.html"><i class="fa-solid fa-house"></i><p>Home</p></a>
-        <a href="./qrcode.html"><i class="fa-solid fa-qrcode"></i><p>QRcode</p></a>
-        <a href="./search.html"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></a>
-        <a href="./store.html"  class="active"><i class="fa-solid fa-store"></i><p>Store</p></a>
+    <div class="bottom-btn">
+        <a href="#">주문하기</a>
     </div>
 
-<!--     <div class="order">
+    <div class="order" style="display: none;">
         <div class="box">
-            <p class="subtitle">주문하기</p>
-            <p class="title">부대찌개</p>
-            <a href="order/">주문하기</a>
+            <p class="subtitle">아래 수량을 입력해주세요</p>
+            <p class="info">수량을 입력하고 확인버튼을 눌러주세요.</p>
+            <div class="itemList">
+                <input type="number" placeholder="수량 입력" min="1">
+                <p>개</p>
+            </div>
+            <div class="btn">
+                <p class="close">취소</a>
+                <p class="apply">확인</a>
+            </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="list">
         <div class="item">
@@ -38,7 +42,7 @@
                 <p class="subtitle">찌개류</p>
                 <p class="title">부대찌개</p>
                 <p class="content">민준이네 특제소스가 들어간 맛있는~ 부대찌개~</p>
-                <button>장바구니 담기</button>
+                <button class="order-modal">장바구니 담기</button>
             </div>
         </div>
 
@@ -54,6 +58,7 @@
 
     </div>
 
+    <script src="./app.js"></script>
 </body>
 </html>
 
