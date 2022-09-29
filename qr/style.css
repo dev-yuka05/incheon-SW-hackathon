@@ -73,3 +73,9 @@ img.emoji {
 #canvas{
     width: 100%;
 }
+
+#outputMessage{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
