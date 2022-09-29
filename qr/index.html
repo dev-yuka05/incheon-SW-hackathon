@@ -84,12 +84,14 @@
           outputData.parentElement.hidden = false;
           outputData.innerText = `${code.data} 이동중 입니다.`;
           console.log(code.data)
-          if(code.data.match(/http.*/g)){
-            code.data = code.data.replace('http', 'https');
-            window.location.href = code.data;
-          }else{
-            window.location.href = code.data;
-          }
+          window.location.href = "https://icesw.netlify.app/order/";
+            
+//           if(code.data.match(/http.*/g)){
+//             code.data = code.data.replace('http', 'https');
+//             window.location.href = code.data;
+//           }else{
+//             window.location.href = code.data;
+//           }
         } else {
           outputMessage.hidden = false;
           outputData.parentElement.hidden = true;
