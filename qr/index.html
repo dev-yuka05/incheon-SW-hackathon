@@ -29,10 +29,10 @@
    
   <a id="githubLink" href="https://github.com/cozmo/jsQR">View documentation on Github</a>
   <p>Pure JavaScript QR code decoding library.</p>
-  <div id="loadingMessage">🎥 Unable to access video stream (please make sure you have a webcam enabled)</div>
+  <div id="loadingMessage">🎥 카메라를 허용해주세요.</div>
   <canvas id="canvas" hidden width="100%"></canvas>
   <div id="output" hidden>
-    <div id="outputMessage">No QR code detected.</div>
+    <div id="outputMessage">QR코드가 인식되어있지않습니다.</div>
     <div hidden><b>Data:</b> <span id="outputData"></span></div>
   </div>
   <script>
@@ -62,7 +62,7 @@
     });
 
     function tick() {
-      loadingMessage.innerText = "⌛ Loading video..."
+      loadingMessage.innerText = "⌛ 로딩중 입니다..."
       if (video.readyState === video.HAVE_ENOUGH_DATA) {
         loadingMessage.hidden = true;
         canvasElement.hidden = false;
